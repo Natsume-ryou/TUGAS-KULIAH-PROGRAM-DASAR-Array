@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+	int num[10];
+	//membuat deret 
+	for (int a=0;a<10;a++){
+		if(a<2)
+			num[a]=a;
+	
+		else{
+			num[a]=num[a-1]+num[a-2];
+		}
+	}	
+	//menampilkan deret 
+	cout<<"\n 10 Deret Fibonanci Pertama: \n";
+	for (int a=0;a<10;a++){
+		cout<<" "<<num[a]<<" ";
+	}
+	return 0;
+}
